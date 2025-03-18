@@ -1,0 +1,523 @@
+[
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Department",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Semester",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.migrations.0001_initial",
+        "description": "app.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Department',\n            fields=[\n                ('id', models.BigAutoField(primary_key=True, serialize=False)),\n                ('name', models.CharField(max_length=255)),",
+        "detail": "app.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "DepartmentAdmin",
+        "kind": 6,
+        "importPath": "app.admin",
+        "description": "app.admin",
+        "peekOfCode": "class DepartmentAdmin(admin.ModelAdmin):\n    list_display = ['name']\n@admin.register(Semester)\nclass SemesterAdmin(admin.ModelAdmin):\n    list_display = ['name','symbol']\n@admin.register(Course)\nclass CourseAdmin(admin.ModelAdmin):\n    list_display = ['name','department']\n@admin.register(Book)\nclass BookAdmin(admin.ModelAdmin):",
+        "detail": "app.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SemesterAdmin",
+        "kind": 6,
+        "importPath": "app.admin",
+        "description": "app.admin",
+        "peekOfCode": "class SemesterAdmin(admin.ModelAdmin):\n    list_display = ['name','symbol']\n@admin.register(Course)\nclass CourseAdmin(admin.ModelAdmin):\n    list_display = ['name','department']\n@admin.register(Book)\nclass BookAdmin(admin.ModelAdmin):\n    list_display = ['name','code','course','semester','edition']\n@admin.register(Student)\nclass StudentAdmin(admin.ModelAdmin):",
+        "detail": "app.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CourseAdmin",
+        "kind": 6,
+        "importPath": "app.admin",
+        "description": "app.admin",
+        "peekOfCode": "class CourseAdmin(admin.ModelAdmin):\n    list_display = ['name','department']\n@admin.register(Book)\nclass BookAdmin(admin.ModelAdmin):\n    list_display = ['name','code','course','semester','edition']\n@admin.register(Student)\nclass StudentAdmin(admin.ModelAdmin):\n    list_display = ['name','symbol','department','course','semester']",
+        "detail": "app.admin",
+        "documentation": {}
+    },
+    {
+        "label": "BookAdmin",
+        "kind": 6,
+        "importPath": "app.admin",
+        "description": "app.admin",
+        "peekOfCode": "class BookAdmin(admin.ModelAdmin):\n    list_display = ['name','code','course','semester','edition']\n@admin.register(Student)\nclass StudentAdmin(admin.ModelAdmin):\n    list_display = ['name','symbol','department','course','semester']",
+        "detail": "app.admin",
+        "documentation": {}
+    },
+    {
+        "label": "StudentAdmin",
+        "kind": 6,
+        "importPath": "app.admin",
+        "description": "app.admin",
+        "peekOfCode": "class StudentAdmin(admin.ModelAdmin):\n    list_display = ['name','symbol','department','course','semester']",
+        "detail": "app.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "kind": 6,
+        "importPath": "app.apps",
+        "description": "app.apps",
+        "peekOfCode": "class AppConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'app'",
+        "detail": "app.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Department",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Department(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    name = models.CharField(max_length=255)\n    def __str__(self):\n        return self.name\nclass Semester(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    name = models.CharField(max_length=255)\n    symbol = models.CharField(max_length=255)\n    def __str__(self):",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Semester",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Semester(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    name = models.CharField(max_length=255)\n    symbol = models.CharField(max_length=255)\n    def __str__(self):\n        return self.name\nclass Course(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    name = models.CharField(max_length=255)\n    department = models.ForeignKey(Department, on_delete=models.CASCADE, null=True)",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Course(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    name = models.CharField(max_length=255)\n    department = models.ForeignKey(Department, on_delete=models.CASCADE, null=True)\n    semesters = models.ManyToManyField(Semester)\n    def __str__(self):\n        return self.name  \nclass Book(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    name = models.CharField(max_length=255)",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Book",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Book(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    name = models.CharField(max_length=255)\n    code = models.CharField(max_length=255)\n    course = models.ForeignKey (Course, on_delete=models.CASCADE, null=True)\n    semester = models.ForeignKey(Semester, on_delete=models.CASCADE, null=True)\n    edition = models.CharField(max_length=255)\n    def __str__(self):\n        return self.name + \" - \" + self.edition  \nclass Student(models.Model):",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Student(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    name = models.CharField(max_length=255)\n    symbol = models.CharField(max_length=255,unique=True)\n    department = models.ForeignKey(Department, on_delete=models.CASCADE, null=True)\n    image = models.ImageField(upload_to='students/', null=True , blank=True)\n    course = models.ForeignKey(Course, on_delete=models.CASCADE, null=True)\n    semester = models.ForeignKey(Semester, on_delete=models.CASCADE, null=True)\n    def __str__(self):\n        return self.name    ",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "studentBook",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class studentBook(models.Model):\n    id = models.BigAutoField(primary_key=True)\n    student = models.ForeignKey(Student, on_delete=models.CASCADE, null=True)\n    book = models.ForeignKey(Book, on_delete=models.CASCADE, null=True)\n    issue_date = models.DateField()\n    return_date = models.DateField( null=True, blank=True)\n    def __str__(self):\n        return self.student.name + \" - \" + self.book.name",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "lms_backend.asgi",
+        "description": "lms_backend.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "lms_backend.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-nkyx_j^77ac#m-o*a&5jq5a7zu4oq6v)pf_w_-^=6c$b(jl+ff'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-nkyx_j^77ac#m-o*a&5jq5a7zu4oq6v)pf_w_-^=6c$b(jl+ff'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'jazzmin',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'jazzmin',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'app',\n    'rest_framework',",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nREST_FRAMEWORK = {",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n            'DEFAULT_PERMISSION_CLASSES': [\n                'rest_framework.permissions.AllowAny',\n            ],\n        }\nROOT_URLCONF = 'lms_backend.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "ROOT_URLCONF = 'lms_backend.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'lms_backend.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join('BASE_DIR', 'static')\n]",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join('BASE_DIR', 'static')\n]\n# Default primary key field type",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join('BASE_DIR', 'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join('BASE_DIR', 'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [\n    os.path.join('BASE_DIR', 'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join('BASE_DIR', 'static')\n]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "lms_backend.urls",
+        "description": "lms_backend.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]\nurlpatterns +=  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "lms_backend.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "lms_backend.wsgi",
+        "description": "lms_backend.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "lms_backend.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lms_backend.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

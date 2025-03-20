@@ -89,11 +89,75 @@
         "documentation": {}
     },
     {
+        "label": "Book",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Department",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Semester",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "studentBook",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Department",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -105,11 +169,91 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "addDepartment",
+        "importPath": "app.views",
+        "description": "app.views",
+        "isExtraImport": true,
+        "detail": "app.views",
+        "documentation": {}
+    },
+    {
+        "label": "deleteDepartment",
+        "importPath": "app.views",
+        "description": "app.views",
+        "isExtraImport": true,
+        "detail": "app.views",
+        "documentation": {}
+    },
+    {
+        "label": "department",
+        "importPath": "app.views",
+        "description": "app.views",
+        "isExtraImport": true,
+        "detail": "app.views",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "DepartmentSerializer",
+        "importPath": "app.serializers",
+        "description": "app.serializers",
+        "isExtraImport": true,
+        "detail": "app.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "isExtraImport": true,
+        "detail": "lms_backend.settings",
         "documentation": {}
     },
     {
@@ -135,14 +279,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -296,6 +432,96 @@
         "documentation": {}
     },
     {
+        "label": "DepartmentSerializer",
+        "kind": 6,
+        "importPath": "app.serializers",
+        "description": "app.serializers",
+        "peekOfCode": "class DepartmentSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Department\n        fields = ('id', 'name', )\n        depth = 10\nclass SemesterSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Semester\n        fields = ('id', 'name', 'symbol', )\n        depth = 10",
+        "detail": "app.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SemesterSerializer",
+        "kind": 6,
+        "importPath": "app.serializers",
+        "description": "app.serializers",
+        "peekOfCode": "class SemesterSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Semester\n        fields = ('id', 'name', 'symbol', )\n        depth = 10\nclass CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Course\n        fields = ('id', 'name',  'department', 'semester',)\n        depth =10",
+        "detail": "app.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CourseSerializer",
+        "kind": 6,
+        "importPath": "app.serializers",
+        "description": "app.serializers",
+        "peekOfCode": "class CourseSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Course\n        fields = ('id', 'name',  'department', 'semester',)\n        depth =10\nclass BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = ('id', 'name', 'code', 'course', 'edition', 'semester',)\n        depth = 10",
+        "detail": "app.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "BookSerializer",
+        "kind": 6,
+        "importPath": "app.serializers",
+        "description": "app.serializers",
+        "peekOfCode": "class BookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Book\n        fields = ('id', 'name', 'code', 'course', 'edition', 'semester',)\n        depth = 10\nclass StudentBookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = studentBook\n        fields = ('id', 'student','book','issue_date','return_date')\n        depth = 10",
+        "detail": "app.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "StudentBookSerializer",
+        "kind": 6,
+        "importPath": "app.serializers",
+        "description": "app.serializers",
+        "peekOfCode": "class StudentBookSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = studentBook\n        fields = ('id', 'student','book','issue_date','return_date')\n        depth = 10\nclass StudentSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Student\n        field = ('id','name','symbol', 'department','image','course','semester','student_book')",
+        "detail": "app.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "StudentSerializer",
+        "kind": 6,
+        "importPath": "app.serializers",
+        "description": "app.serializers",
+        "peekOfCode": "class StudentSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Student\n        field = ('id','name','symbol', 'department','image','course','semester','student_book')",
+        "detail": "app.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "app.urls",
+        "description": "app.urls",
+        "peekOfCode": "urlpatterns = [\n    path('department/',department,name='department'),\n    path('delete-department/<str:givenId>', deleteDepartment,name='deleteDepartment'),\n    path('add-department',addDepartment,name='addDepartment')\n]",
+        "detail": "app.urls",
+        "documentation": {}
+    },
+    {
+        "label": "department",
+        "kind": 2,
+        "importPath": "app.views",
+        "description": "app.views",
+        "peekOfCode": "def department(request):\n    data = {\n        'departments':DepartmentSerializer(Department.objects.all(),many=True).data\n    }\n    return Response(data)\n@api_view(['GET'])\ndef deleteDepartment(request,givenId):\n  Department.objects.get(id=givenId).delete()\n  return Response({'status':200}) \n@api_view(['POST'])",
+        "detail": "app.views",
+        "documentation": {}
+    },
+    {
+        "label": "deleteDepartment",
+        "kind": 2,
+        "importPath": "app.views",
+        "description": "app.views",
+        "peekOfCode": "def deleteDepartment(request,givenId):\n  Department.objects.get(id=givenId).delete()\n  return Response({'status':200}) \n@api_view(['POST'])\ndef addDepartment(request):\n    datas = request.data \n    Department(name = datas['departmentName']).save()\n    return Response({'status':200})",
+        "detail": "app.views",
+        "documentation": {}
+    },
+    {
+        "label": "addDepartment",
+        "kind": 2,
+        "importPath": "app.views",
+        "description": "app.views",
+        "peekOfCode": "def addDepartment(request):\n    datas = request.data \n    Department(name = datas['departmentName']).save()\n    return Response({'status':200})",
+        "detail": "app.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "lms_backend.asgi",
@@ -354,7 +580,16 @@
         "kind": 5,
         "importPath": "lms_backend.settings",
         "description": "lms_backend.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nREST_FRAMEWORK = {",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    \"corsheaders.middleware.CorsMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
+        "detail": "lms_backend.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_ALL_ORIGINS",
+        "kind": 5,
+        "importPath": "lms_backend.settings",
+        "description": "lms_backend.settings",
+        "peekOfCode": "CORS_ALLOW_ALL_ORIGINS = True\nREST_FRAMEWORK = {\n            'DEFAULT_PERMISSION_CLASSES': [\n                'rest_framework.permissions.AllowAny',\n            ],\n        }\nROOT_URLCONF = 'lms_backend.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',",
         "detail": "lms_backend.settings",
         "documentation": {}
     },
@@ -498,7 +733,7 @@
         "kind": 5,
         "importPath": "lms_backend.urls",
         "description": "lms_backend.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]\nurlpatterns +=  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/',include('app.urls'))\n]\nurlpatterns +=  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "lms_backend.urls",
         "documentation": {}
     },
